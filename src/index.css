@@ -1,0 +1,112 @@
+/*------*/
+/* MAIN */
+/*------*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+body {
+  margin: 0;
+  color: lightgrey;
+  background-color: var(--light-black);
+  font-family: var(--fira);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: var(--code);
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --light-black: #2a2a2a;
+  --black: #1f2428;
+  --orange: #ce7060;
+
+  --fira: "Fira Code", monospace;
+  --apple: -apple-system, Roboto, Ubuntu, sans-serif;
+  --code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*-----------*/
+/* CONTAINER */
+/* MAIN GRID */
+/*-----------*/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+.content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 50px 150px 1fr;
+  grid-template-rows: 30px 40px 1fr;
+  grid-template-areas:
+    "title title title"
+    "side-menu explorer navbar"
+    "side-menu explorer home";
+}
+.title__container {
+  grid-area: title;
+}
+.menu__container {
+  grid-area: side-menu;
+}
+.explorer__container {
+  grid-area: explorer;
+}
+.navbar__container {
+  grid-area: navbar;
+}
+.home__container {
+  grid-area: home;
+}
+
+/*-------*/
+/* TITLE */
+/*-------*/
+.title__container {
+  font-family: var(--apple);
+  display: flex;
+}
+.title__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.title__content:first-child > span {
+  margin-right: auto;
+}
+.title__content:last-child > span {
+  margin-left: auto;
+}
+.title__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.title__ul li {
+  margin-right: 1rem;
+}
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+.footer__container {
+  display: grid;
+}
+.footer__terminal {
+  border-top: 1px solid grey;
+  font-family: var(--apple);
+  color: white;
+  padding-top: 1rem;
+  font-size: small;
+  letter-spacing: 0.05rem;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
