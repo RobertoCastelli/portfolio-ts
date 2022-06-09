@@ -7,6 +7,7 @@ body {
   color: var(--white);
   background-color: var(--light-black);
   font-family: var(--fira-font);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +27,7 @@ code {
   --orange: #ce7060;
 
   --fira-font: "Fira Code", monospace;
-  --apple-font: -apple-system, Roboto, Ubuntu, sans-serif;
+  --apple-font: Verdana, Geneva, Tahoma, sans-serif;
   --code-font: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
@@ -68,9 +69,9 @@ code {
   grid-area: home;
 }
 
-/*-------*/
-/* TITLE */
-/*-------*/
+/*-----------*/
+/* TITLE BAR */
+/*-----------*/
 .title__container {
   font-family: var(--apple-font);
   display: flex;
@@ -106,9 +107,9 @@ code {
   margin-right: 1rem;
 }
 
-/*------*/
-/* MENU */
-/*------*/
+/*-----------------*/
+/* MENU ICONS VERT */
+/*-----------------*/
 .menu__container {
   color: var(--light-grey);
   display: flex;
@@ -123,28 +124,39 @@ code {
 .menu__container > ul > li {
   margin-bottom: 1rem;
 }
-/*----------*/
-/* EXPLORER */
-/*----------*/
+/*---------------*/
+/* EXPLORER LIST */
+/*---------------*/
 .explorer__container {
   background-color: var(--black);
+  font-family: var(--apple-font);
 }
 .explorer__accordion--folder {
   display: flex;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
 .explorer__accordion > ul {
   list-style: none;
   margin: 0;
 }
+.explorer__accordion > ul > li {
+  margin-bottom: 0.5rem;
+}
+.explorer__title {
+  font-family: monospace;
+  margin-left: 1rem;
+  font-size: large;
+}
 
-/*--------*/
-/* NAVBAR */
-/*--------*/
+/*-------------*/
+/* NAVBAR TABS */
+/*-------------*/
 .navbar__container {
   align-self: center;
+  font-family: var(--apple-font);
 }
 .navbar__container > ul {
   display: flex;
@@ -158,6 +170,9 @@ code {
 }
 .nav__link--inactive {
   color: var(--white);
+}
+.nav__link-menu--inactive {
+  color: var(--light-grey);
 }
 .nav__link--active {
   color: orange;
@@ -251,5 +266,6 @@ a {
   padding: 0;
 }
 .footer__icons > ul > li {
+  display: flex;
   margin: 0 0.5rem;
 }

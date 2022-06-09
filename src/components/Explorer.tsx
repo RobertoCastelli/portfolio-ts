@@ -37,6 +37,7 @@ const Explorer = () => {
 
   return (
     <div className="explorer__container">
+      <div className="explorer__title">EXPLORER</div>
       <div className="explorer__accordion">
         <div className="explorer__accordion--folder">
           <div>

@@ -60,22 +60,27 @@ const Footer = () => {
             <VscSync size={16} />
           </li>
           <li>
-            <VscError size={16} /> 0
+            <VscError size={16} />
+            &nbsp;0
           </li>
           <li>
-            <VscWarning size={16} /> 0
+            <VscWarning size={16} />
+            &nbsp;0
           </li>
         </ul>
 
         <ul>
           <li>
-            <VscJson size={16} /> Typescript React
+            <VscJson size={16} />
+            &nbsp;Typescript React
           </li>
           <li>
-            <VscBroadcast size={16} /> Go live
+            <VscBroadcast size={16} />
+            &nbsp;Go live
           </li>
           <li>
-            <VscCheckAll size={16} /> Prettier
+            <VscCheckAll size={16} />
+            &nbsp;Prettier
           </li>
           <li>
             <VscFeedback size={16} />
