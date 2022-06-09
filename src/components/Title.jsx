@@ -1,3 +1,10 @@
+import logoVscode from "../images/vscode_icon.svg";
+import {
+  VscChromeClose,
+  VscChromeMaximize,
+  VscChromeMinimize,
+} from "react-icons/vsc";
+
 const Title = () => {
   return (
     <div className="title__container">
@@ -5,11 +12,7 @@ const Title = () => {
         <span>
           <ul className="title__ul">
             <li>
-              <img
-                className="title__logo"
-                src="http://via.placeholder.com/25x25"
-                alt="logo"
-              />
+              <img className="title__logo" src={logoVscode} alt="logo-vscode" />
             </li>
             <li>File</li>
             <li>Edit</li>
@@ -21,18 +24,18 @@ const Title = () => {
       </div>
 
       <div className="title__content">
-        <span>Roberto Castelli - VS Code</span>
+        <span>Roberto Castelli - Visual Studio Code</span>
       </div>
 
       <div className="title__content">
         <span>
-          <img src="http://via.placeholder.com/25" alt="icons" />
-          <img src="http://via.placeholder.com/25" alt="icons" />
-          <img src="http://via.placeholder.com/25" alt="icons" />
+          <VscChromeMinimize />
+          <VscChromeMaximize />
+          <VscChromeClose />
         </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

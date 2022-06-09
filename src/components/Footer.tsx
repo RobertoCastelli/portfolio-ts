@@ -1,3 +1,15 @@
+import {
+  VscSourceControl,
+  VscFeedback,
+  VscWarning,
+  VscBell,
+  VscError,
+  VscSync,
+  VscCheckAll,
+  VscBroadcast,
+  VscJson,
+} from "react-icons/vsc";
+
 const Footer = () => {
   return (
     <footer className="footer__container">
@@ -11,7 +23,6 @@ const Footer = () => {
           <li>DEBUG CONSOLE</li>
         </ul>
       </section>
-      <br />
 
       <section className="footer__http">
         <div className="footer__http-local">Local:</div>
@@ -31,16 +42,50 @@ const Footer = () => {
       <br />
 
       <section className="footer__webpack">
-        <div>
+        <div className="footer__webpack--successfully">
           webpack compiled <span>successfully</span>
         </div>
-        <div>No issues found.</div>
+        <div className="footer__webpack--issues">No issues found.</div>
       </section>
       <br />
 
-      <section className="footer__icons">icons</section>
-    </footer>
-  )
-}
+      <section className="footer__icons">
+        <ul>
+          <li>
+            <VscSourceControl size={16} />
+          </li>
+          <li>master*</li>
+          <li>
+            <VscSync size={16} />
+          </li>
+          <li>
+            <VscError size={16} /> 0
+          </li>
+          <li>
+            <VscWarning size={16} /> 0
+          </li>
+        </ul>
 
-export default Footer
+        <ul>
+          <li>
+            <VscJson size={16} /> Typescript React
+          </li>
+          <li>
+            <VscBroadcast size={16} /> Go live
+          </li>
+          <li>
+            <VscCheckAll size={16} /> Prettier
+          </li>
+          <li>
+            <VscFeedback size={16} />
+          </li>
+          <li>
+            <VscBell size={16} />
+          </li>
+        </ul>
+      </section>
+    </footer>
+  );
+};
+
+export default Footer;
