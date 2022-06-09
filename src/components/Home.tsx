@@ -1,9 +1,12 @@
+//--- IMAGES
+import icona from "../images/logo.png"
+
 const Home = () => {
   return (
     <div className="home__container">
       <div>Roberto Castelli</div>
       <div>Project Manager - Web Developer - BIM Specialist</div>
-      <img src="http://via.placeholder.com/250" alt="potrait" />
+      <img className="home__icona" src={icona} alt="icona" />
     </div>
   )
 }

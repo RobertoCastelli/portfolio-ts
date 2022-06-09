@@ -16,6 +16,7 @@ code {
 * {
   box-sizing: border-box;
 }
+
 :root {
   --light-black: #2a2a2a;
   --black: #1f2428;
@@ -44,8 +45,8 @@ code {
   flex-grow: 1;
   height: 65vh;
   display: grid;
-  grid-template-columns: 50px 150px 1fr;
-  grid-template-rows: 27px 40px 1fr;
+  grid-template-columns: 60px 200px 1fr;
+  grid-template-rows: 35px 40px 1fr;
   grid-template-areas:
     "title title title"
     "side-menu explorer navbar"
@@ -73,7 +74,7 @@ code {
 .title__container {
   font-family: var(--apple-font);
   display: flex;
-  background-color: var(--grey);
+  background-color: var(--black);
 }
 .title__content {
   display: flex;
@@ -113,6 +114,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .menu__container > ul {
   list-style: none;
@@ -127,6 +129,49 @@ code {
 .explorer__container {
   background-color: var(--black);
 }
+.explorer__accordion--folder {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.explorer__accordion > ul {
+  list-style: none;
+  margin: 0;
+}
+
+/*--------*/
+/* NAVBAR */
+/*--------*/
+.navbar__container {
+  align-self: center;
+}
+.navbar__container > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.navbar__container > ul > li {
+  padding: 0.5rem;
+  width: 150px;
+  text-align: center;
+}
+.nav__link--inactive {
+  color: var(--white);
+}
+.nav__link--active {
+  color: orange;
+}
+a {
+  text-decoration: none;
+}
+
+/*------*/
+/* HOME */
+/*------*/
+.home__icona {
+  width: 200px;
+}
 
 /*--------*/
 /* FOOTER */
@@ -139,14 +184,15 @@ code {
 .footer__terminal > ul {
   display: flex;
   list-style: none;
+  font-size: large;
   padding: 0;
 }
 .footer__terminal > ul > li {
   margin-left: 1rem;
   color: var(--light-grey);
+  font-family: monospace;
 }
 .footer__terminal--underline {
-  font-family: var(--apple-font);
   color: white;
   text-decoration: underline;
   text-underline-offset: 5px;

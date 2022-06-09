@@ -1,9 +1,11 @@
-import logoVscode from "../images/vscode_icon.svg";
+//--- IMAGES
+import logoVscode from "../images/vscode_icon.svg"
+//--- ICONS
 import {
   VscChromeClose,
   VscChromeMaximize,
   VscChromeMinimize,
-} from "react-icons/vsc";
+} from "react-icons/vsc"
 
 const Title = () => {
   return (
@@ -35,7 +37,7 @@ const Title = () => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Title;
+export default Title

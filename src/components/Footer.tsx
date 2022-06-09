@@ -1,3 +1,4 @@
+//--- ICONS
 import {
   VscSourceControl,
   VscFeedback,
@@ -8,7 +9,7 @@ import {
   VscCheckAll,
   VscBroadcast,
   VscJson,
-} from "react-icons/vsc";
+} from "react-icons/vsc"
 
 const Footer = () => {
   return (
@@ -85,7 +86,7 @@ const Footer = () => {
         </ul>
       </section>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
