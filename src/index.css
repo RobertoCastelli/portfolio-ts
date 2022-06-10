@@ -46,7 +46,7 @@ code {
   flex-grow: 1;
   height: 65vh;
   display: grid;
-  grid-template-columns: 60px 200px 1fr;
+  grid-template-columns: 60px 180px 1fr;
   grid-template-rows: 35px 40px 1fr;
   grid-template-areas:
     "title title title"
@@ -138,6 +138,14 @@ code {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+.explorer__accordion--link {
+  display: flex;
+  align-items: center;
+}
+.explorer__accordion--link > img {
+  width: 15px;
+  margin-right: 0.5rem;
+}
 .explorer__accordion > ul {
   list-style: none;
   margin: 0;
@@ -146,9 +154,8 @@ code {
   margin-bottom: 0.5rem;
 }
 .explorer__title {
-  font-family: monospace;
   margin-left: 1rem;
-  font-size: large;
+  font-size: small;
 }
 
 /*-------------*/
@@ -177,6 +184,14 @@ code {
 .nav__link--active {
   color: orange;
 }
+.nav__link {
+  display: flex;
+  align-items: center;
+}
+.nav__link > img {
+  width: 15px;
+  margin-right: 0.5rem;
+}
 a {
   text-decoration: none;
 }
@@ -187,6 +202,10 @@ a {
 .home__icona {
   width: 200px;
 }
+
+/*-------*/
+/* ABOUT */
+/*-------*/
 
 /*--------*/
 /* FOOTER */

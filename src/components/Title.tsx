@@ -1,11 +1,11 @@
 //--- IMAGES
-import logoVscode from "../images/vscode_icon.svg"
+import iconVscode from "../images/icons/vscode_icon.svg";
 //--- ICONS
 import {
   VscChromeClose,
   VscChromeMaximize,
   VscChromeMinimize,
-} from "react-icons/vsc"
+} from "react-icons/vsc";
 
 const Title = () => {
   return (
@@ -14,7 +14,7 @@ const Title = () => {
         <span>
           <ul className="title__ul">
             <li>
-              <img className="title__logo" src={logoVscode} alt="logo-vscode" />
+              <img className="title__logo" src={iconVscode} alt="logo-vscode" />
             </li>
             <li>File</li>
             <li>Edit</li>
@@ -37,7 +37,7 @@ const Title = () => {
         </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

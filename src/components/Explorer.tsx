@@ -1,14 +1,19 @@
 //--- ROUTER
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 //--- ICONS
-import { VscChevronRight } from "react-icons/vsc"
+import { VscChevronRight } from "react-icons/vsc";
+import react from "../images/icons/react_icon.svg";
+import js from "../images/icons/js_icon.svg";
+import markdown from "../images/icons/markdown_icon.svg";
+import json from "../images/icons/json_icon.svg";
 
 const Explorer = () => {
   //--- INTERFACE
   interface List {
-    id: number
-    link: string
-    route: string
+    id: number;
+    link: string;
+    route: string;
+    icon: string;
   }
 
   //--- LIST
@@ -17,23 +22,27 @@ const Explorer = () => {
       id: 1,
       link: "Home.jsx",
       route: "/",
+      icon: react,
     },
     {
       id: 2,
       link: "Projects.js",
       route: "/projects",
+      icon: js,
     },
     {
       id: 3,
       link: "Blog.md",
       route: "/blog",
+      icon: markdown,
     },
     {
       id: 4,
       link: "Github.html",
       route: "/github",
+      icon: json,
     },
-  ]
+  ];
 
   return (
     <div className="explorer__container">
@@ -55,15 +64,18 @@ const Explorer = () => {
                     isActive ? "nav__link--active" : "nav__link--inactive"
                   }
                 >
-                  <div>{elem.link}</div>
+                  <div className="explorer__accordion--link">
+                    <img src={elem.icon} alt="icon" />
+                    {elem.link}
+                  </div>
                 </NavLink>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Explorer
+export default Explorer;
