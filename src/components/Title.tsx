@@ -1,16 +1,16 @@
 //--- IMAGES
-import iconVscode from "../images/icons/vscode_icon.svg";
+import iconVscode from "../images/icons/vscode_icon.svg"
 //--- ICONS
 import {
   VscChromeClose,
   VscChromeMaximize,
   VscChromeMinimize,
-} from "react-icons/vsc";
+} from "react-icons/vsc"
 
 const Title = () => {
   return (
     <div className="title__container">
-      <div className="title__content">
+      <div className="title__content--left">
         <span>
           <ul className="title__ul">
             <li>
@@ -25,11 +25,11 @@ const Title = () => {
         </span>
       </div>
 
-      <div className="title__content">
+      <div className="title__content--center">
         <span>Roberto Castelli - Visual Studio Code</span>
       </div>
 
-      <div className="title__content">
+      <div className="title__content--right">
         <span>
           <VscChromeMinimize />
           <VscChromeMaximize />
@@ -37,7 +37,7 @@ const Title = () => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Title;
+export default Title

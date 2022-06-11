@@ -1,14 +1,23 @@
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useState } from "react"
 //--- INTERFACE
 interface ContextProps {
-  children: ReactNode;
+  children: ReactNode
 }
-export const ContextData = createContext<unknown>({});
+
+export const ContextData = createContext<any>({})
 
 const ContextProvider = (props: ContextProps) => {
-  return (
-    <ContextData.Provider value={{}}>{props.children}</ContextData.Provider>
-  );
-};
+  //--- STATES
+  const [isExpanded, setisExpanded] = useState<boolean>(false)
 
-export default ContextProvider;
+  //--- SET ACCORDION STATE
+  const handleAccordion = () => setisExpanded(!isExpanded)
+
+  return (
+    <ContextData.Provider value={{ isExpanded, handleAccordion }}>
+      {props.children}
+    </ContextData.Provider>
+  )
+}
+
+export default ContextProvider

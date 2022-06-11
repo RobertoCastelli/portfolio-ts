@@ -52,7 +52,7 @@ const Menu = () => {
     {
       id: 2,
       icon: <VscGear size={30} />,
-      route: "/drawings",
+      route: "/tools",
     },
   ]
 
