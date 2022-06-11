@@ -9,7 +9,6 @@ import { VscChevronRight, VscChevronDown } from "react-icons/vsc"
 import react from "../images/icons/react_icon.svg"
 import js from "../images/icons/js_icon.svg"
 import markdown from "../images/icons/markdown_icon.svg"
-import json from "../images/icons/json_icon.svg"
 
 const Explorer = () => {
   //--- INTERFACE
@@ -39,12 +38,6 @@ const Explorer = () => {
       link: "Blog.md",
       route: "/blog",
       icon: markdown,
-    },
-    {
-      id: 4,
-      link: "Github.html",
-      route: "/github",
-      icon: json,
     },
   ]
 

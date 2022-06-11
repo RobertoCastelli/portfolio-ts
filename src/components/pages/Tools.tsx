@@ -67,6 +67,7 @@ const Tools = () => {
   return (
     <div className="tools__container">
       <div className="tools__content">
+        {/* eslint-disable-next-line */}
         <h1>// tools</h1>
         <ul>
           <li>&nbsp;1 &nbsp;.mastering {"{"}</li>

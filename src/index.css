@@ -252,11 +252,25 @@ a {
   font-family: var(--fira-font);
   background: transparent;
   color: orange;
+  margin-right: 1rem;
 }
 .home__content button:hover {
   transition: all 0.2s linear;
   background-color: orange;
   color: var(--light-black);
+}
+.home__pulse {
+  animation: pulse 1s infinite ease-out;
+}
+@keyframes pulse {
+  0% {
+    color: orange;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: orange;
+  }
 }
 
 /*----------*/
@@ -293,6 +307,17 @@ a {
 .about__text {
   margin-left: 1rem;
   color: var(--white);
+}
+.about__links {
+  color: cadetblue;
+  display: flex;
+  padding: 1rem;
+}
+.about__links a {
+  margin-left: 1rem;
+}
+a {
+  color: cadetblue;
 }
 .about__content button {
   cursor: pointer;

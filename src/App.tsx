@@ -12,7 +12,6 @@ import Footer from "./components/Footer"
 import Home from "./components/pages/Home"
 import Projects from "./components/pages/Projects"
 import Blog from "./components/pages/Blog"
-import Github from "./components/pages/Github"
 import About from "./components/pages/About"
 import Tools from "./components/pages/Tools"
 
@@ -30,7 +29,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/Blog" element={<Blog />} />
-              <Route path="/github" element={<Github />} />
               <Route path="/about" element={<About />} />
               <Route path="/tools" element={<Tools />} />
             </Routes>

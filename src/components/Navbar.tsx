@@ -1,18 +1,17 @@
 //--- ROUTER
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 //--- ICONS
-import react from "../images/icons/react_icon.svg";
-import js from "../images/icons/js_icon.svg";
-import markdown from "../images/icons/markdown_icon.svg";
-import json from "../images/icons/json_icon.svg";
+import react from "../images/icons/react_icon.svg"
+import js from "../images/icons/js_icon.svg"
+import markdown from "../images/icons/markdown_icon.svg"
 
 const Navbar = () => {
   //--- INTERFACE
   interface List {
-    id: number;
-    link: string;
-    route: string;
-    icon: string;
+    id: number
+    link: string
+    route: string
+    icon: string
   }
 
   //--- LIST
@@ -35,13 +34,7 @@ const Navbar = () => {
       route: "/blog",
       icon: markdown,
     },
-    {
-      id: 4,
-      link: "Github.html",
-      route: "/github",
-      icon: json,
-    },
-  ];
+  ]
 
   return (
     <nav className="navbar__container">
@@ -61,11 +54,11 @@ const Navbar = () => {
                 </div>
               </NavLink>
             </li>
-          );
+          )
         })}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

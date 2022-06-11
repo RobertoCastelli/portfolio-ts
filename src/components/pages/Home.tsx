@@ -46,7 +46,9 @@ const Home = () => {
           <li>25</li>
         </ul>
         <img src={icona} alt="icona" />
-        <div className="home__name">Robert0 Ca5telli</div>
+        <div className="home__name">
+          Robert0 Ca5telli<span className="home__pulse">.</span>
+        </div>
       </div>
     </div>
   )

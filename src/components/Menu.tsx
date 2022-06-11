@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom"
 //--- ICONS
 import {
   VscFiles,
-  VscGithubAlt,
   VscCode,
   VscBook,
   VscAccount,
@@ -34,11 +33,6 @@ const Menu = () => {
       id: 3,
       icon: <VscBook size={30} />,
       route: "/blog",
-    },
-    {
-      id: 4,
-      icon: <VscGithubAlt size={30} />,
-      route: "/github",
     },
   ]
 
