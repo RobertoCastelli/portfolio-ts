@@ -5,47 +5,16 @@ import { useContext } from "react"
 import { ContextData } from "../context"
 //--- ICONS
 import { VscChevronRight, VscChevronDown } from "react-icons/vsc"
-
-import react from "../images/icons/react_icon.svg"
-import js from "../images/icons/js_icon.svg"
-import markdown from "../images/icons/markdown_icon.svg"
+//--- INTERFACE
+import { List } from "../database/explorer"
 
 const Explorer = () => {
-  //--- INTERFACE
-  interface List {
-    id: number
-    link: string
-    route: string
-    icon: string
-  }
-
-  //--- LIST
-  const list: List[] = [
-    {
-      id: 1,
-      link: "Home.jsx",
-      route: "/",
-      icon: react,
-    },
-    {
-      id: 2,
-      link: "Projects.js",
-      route: "/projects",
-      icon: js,
-    },
-    {
-      id: 3,
-      link: "Blog.md",
-      route: "/blog",
-      icon: markdown,
-    },
-  ]
-
   //--- CONTEXT
   const {
     isExpanded,
     handleAccordion,
-  }: { isExpanded: boolean; handleAccordion: () => void } =
+    list,
+  }: { isExpanded: boolean; handleAccordion: () => void; list: List[] } =
     useContext(ContextData)
 
   return (
