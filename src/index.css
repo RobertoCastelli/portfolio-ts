@@ -276,6 +276,18 @@ a {
 /*----------*/
 /* PROJECTS */
 /*----------*/
+.projects__container {
+  margin: 1rem;
+}
+.projects__content ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.card__container {
+  border: 1px solid var(--light-grey);
+}
 
 /*------*/
 /* BLOG */
@@ -288,7 +300,7 @@ a {
 /*-------*/
 /* ABOUT */
 /*-------*/
-.about__content {
+.about__container {
   padding: 1rem;
   color: var(--light-grey);
 }
@@ -337,7 +349,7 @@ a {
 /*-------*/
 /* TOOLS */
 /*-------*/
-.tools__content {
+.tools__container {
   padding: 1rem;
   color: var(--light-grey);
 }

@@ -3,6 +3,8 @@ import { useContext } from "react"
 import { ContextData } from "../../context"
 //--- INTERFACE
 import { List } from "../../database/projects"
+//--- COMPONENT
+import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
   const { projects } = useContext(ContextData)
@@ -14,7 +16,16 @@ const Projects = () => {
         <h1>// projects</h1>
         <ul>
           {projects.map((elem: List) => {
-            return <li>{elem.title}</li>
+            return (
+              <li>
+                <ProjectCard
+                  title={elem.title}
+                  link={elem.link}
+                  src={elem.src}
+                  tech={elem.tech}
+                />
+              </li>
+            )
           })}
         </ul>
       </div>
