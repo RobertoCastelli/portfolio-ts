@@ -285,8 +285,12 @@ a {
   list-style: none;
   padding: 0;
 }
+
 .card__container {
   border: 1px solid var(--light-grey);
+}
+.card__container img {
+  width: 100px;
 }
 
 /*------*/

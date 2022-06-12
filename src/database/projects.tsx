@@ -1,3 +1,29 @@
+import nightrun from "../images/projects/bgnight.jpg"
+import todo from "../images/projects/bgtodo.jpg"
+import pokedex from "../images/projects/bgpoke.jpg"
+import advice from "../images/projects/bgadvice.jpg"
+import weather from "../images/projects/bgweather.jpg"
+import eightball from "../images/projects/bgeightball.jpg"
+import meme from "../images/projects/bgmeme.jpg"
+import weatherAlt from "../images/projects/bgweather2.jpg"
+import news from "../images/projects/bgnews.jpg"
+import metro from "../images/projects/bgmetro.png"
+import postIt from "../images/projects/bgpostit.jpg"
+import books from "../images/projects/bgbooks.png"
+import budget from "../images/projects/bgbudget.jpg"
+import rock from "../images/projects/bgrock.jpg"
+import pomodoro from "../images/projects/bgpomodoro.png"
+import countdown from "../images/projects/bgcountdown.jpg"
+import split from "../images/projects/bgsplit.jpg"
+import drum from "../images/projects/bgdrum.jpg"
+import quiz from "../images/projects/bgquiz.jpg"
+import portfolio from "../images/projects/bgportfolio.jpg"
+import advanced from "../images/projects/bgadvanced.png"
+import warehouse from "../images/projects/bgwarehouse.png"
+import gol from "../images/projects/bggame.png"
+import paint from "../images/projects/bgpaintalt.jpg"
+import store from "../images/projects/bgstore.png"
+
 //--- INTERFACE
 export interface List {
   title: string
@@ -10,152 +36,152 @@ export interface List {
 export const projects: List[] = [
   {
     title: "NIGHT RUN",
-    src: "../images/bgnight.jpg",
+    src: nightrun,
     tech: "javascript",
     link: "https://to-night-run.netlify.com/",
   },
   {
     title: "TO DO LIST",
     tech: "vue",
-    src: "../images/bgtodo.jpg",
+    src: todo,
     link: "https://to-vue-list.netlify.com/",
   },
   {
     title: "POKEDEX JS",
     tech: "api",
-    src: "../images/bgpoke.jpg",
+    src: pokedex,
     link: "https://to-pokedex.netlify.com/",
   },
   {
     title: "ADVICE SLIP",
     tech: "api",
-    src: "../images/bgadvice.jpg",
+    src: advice,
     link: "https://to-advice.netlify.com/",
   },
   {
     title: "WEATHER APP",
     tech: "api",
-    src: "../images/bgweather.jpg",
+    src: weather,
     link: "https://to-weather.netlify.com/",
   },
   {
     title: "8-BALL QUEST",
     tech: "api",
-    src: "../images/bgeightball.jpg",
+    src: eightball,
     link: "https://to-eight.netlify.com/",
   },
   {
     title: "CREATE MEME",
     tech: "react, api",
-    src: "../images/bgmeme.jpg",
+    src: meme,
     link: "https://to-meme.netlify.com/",
   },
   {
     title: "WEATHER APP",
     tech: "react, api",
-    src: "../images/bgweather2.jpg",
+    src: weatherAlt,
     link: "https://to-weather-react.netlify.com/",
   },
   {
     title: "TECH NEWS",
     tech: "react, api",
-    src: "../images/bgnews.jpg",
+    src: news,
     link: "https://to-news.netlify.com/",
   },
   {
     title: "READING LIST",
     tech: "react",
-    src: "../images/bgbooks.png",
+    src: books,
     link: "https://to-books.netlify.com/",
   },
   {
     title: "METRONOMO",
     tech: "react",
-    src: "../images/bgmetro.png",
+    src: metro,
     link: "https://to-metronome.netlify.com",
   },
   {
     title: "POST-IT JS",
     tech: "vue",
-    src: "../images/bgpostit.jpg",
+    src: postIt,
     link: "https://vue-it-fire.web.app/#/",
   },
   {
     title: "BUDGET BUDDY",
     tech: "tables",
-    src: "../images/bgbudget.jpg",
+    src: budget,
     link: "https://to-budget.netlify.com/",
   },
   {
     title: "ROCK PAPER",
     tech: "javascript",
-    src: "../images/bgrock.jpg",
+    src: rock,
     link: "https://to-rock.netlify.com/",
   },
   {
     title: "POMO CLOCK",
     tech: "javascript",
-    src: "../images/bgpomodoro.png",
+    src: pomodoro,
     link: "https://to-pomodoro.netlify.com/",
   },
   {
     title: "COUNTDOWN",
     tech: "javascript",
-    src: "../images/bgcountdown.jpg",
+    src: countdown,
     link: "https://to-countdown.netlify.com/",
   },
   {
     title: "GO FIX IT APP",
     tech: "javascript",
-    src: "../images/bgsplit.jpg",
+    src: split,
     link: "https://to-naajeni.netlify.com/",
   },
   {
     title: "DRUM MACHINE",
     tech: "javascript",
-    src: "../images/bgdrum.jpg",
+    src: drum,
     link: "https://to-drum-machine.netlify.com/",
   },
   {
     title: "QUIZ GAME",
     tech: "javascript",
-    src: "../images/bgquiz.jpg",
+    src: quiz,
     link: "https://to-quiz.netlify.com/",
   },
   {
     title: "PORTFOLIO",
     tech: "react",
-    src: "../images/bgportfolio.jpg",
+    src: portfolio,
     link: "https://to-portfolio-react.netlify.app/",
   },
   {
     title: "ALGORYTHMS ADVANCED",
     tech: "javascript",
-    src: "../images/bgadvanced.png",
+    src: advanced,
     link: "https://to-fcc-advanced.netlify.com/",
   },
   {
     title: "WAREHOUSE",
     tech: "database",
-    src: "../images/bgwarehouse.png",
+    src: warehouse,
     link: "https://to-instock.netlify.com/",
   },
   {
     title: "GAME OF LIFE",
     tech: "canvas",
-    src: "../images/bggame.png",
+    src: gol,
     link: "https://to-game-of-life.netlify.com/",
   },
   {
     title: "SIMPLE PAINT",
     tech: "canvas",
-    src: "../images/bgpaintalt.jpg",
+    src: paint,
     link: "https://to-paint.netlify.com/",
   },
   {
     title: "E-STORE",
     tech: "react",
-    src: "../images/bgstore.png",
+    src: store,
     link: "https://to-store.netlify.com/",
   },
   {
