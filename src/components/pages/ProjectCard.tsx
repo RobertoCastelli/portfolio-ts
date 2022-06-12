@@ -3,14 +3,16 @@ import { List } from "../../database/projects"
 
 const ProjectCard = (props: List) => {
   return (
-    <div className="card__container">
-      <div className="card_content">
+    <div className="flip-card">
+      <div className="flip-card-inner">
         <a href={props.link} rel="noopener noreferrer" target="_blank">
-          <div className="card__title">
+          <div className="flip-card-front">
+            <img src={props.src} alt={props.title} />
+          </div>
+          <div className="flip-card-back">
             <div>{props.title}</div>
             <div>{props.tech}</div>
           </div>
-          <img src={props.src} alt={props.title} />
         </a>
       </div>
     </div>

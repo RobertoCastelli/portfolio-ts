@@ -23,6 +23,14 @@ import warehouse from "../images/projects/bgwarehouse.png"
 import gol from "../images/projects/bggame.png"
 import paint from "../images/projects/bgpaintalt.jpg"
 import store from "../images/projects/bgstore.png"
+import movies from "../images/projects/bgmovies.png"
+import calculator from "../images/projects/bgcalculator.jpg"
+import css from "../images/projects/bggenerator.png"
+import battle from "../images/projects/bgbattlearena.jpg"
+import covid from "../images/projects/bgcovid.jpg"
+import pixel from "../images/projects/bgpixel.png"
+import hangman from "../images/projects/bghangman.jpg"
+import ticket from "../images/projects/bgpoli.jpg"
 
 //--- INTERFACE
 export interface List {
@@ -167,12 +175,6 @@ export const projects: List[] = [
     link: "https://to-instock.netlify.com/",
   },
   {
-    title: "GAME OF LIFE",
-    tech: "canvas",
-    src: gol,
-    link: "https://to-game-of-life.netlify.com/",
-  },
-  {
     title: "SIMPLE PAINT",
     tech: "canvas",
     src: paint,
@@ -187,67 +189,55 @@ export const projects: List[] = [
   {
     title: "MOVIES DB",
     tech: "react, api",
-    src: "../images/bgmovies.png",
+    src: movies,
     link: "https://to-movies.netlify.com/",
   },
   {
     title: "CALCULATOR",
     tech: "react",
-    src: "../images/bgcalculator.jpg",
+    src: calculator,
     link: "https://to-calculator.netlify.com/",
-  },
-  {
-    title: "LOL TRACKER",
-    tech: "react, api",
-    src: "../images/bglol.jpg",
-    link: "https://to-lol-tracker.netlify.com/",
   },
   {
     title: "CSS GENERATOR",
     tech: "react",
-    src: "../images/bggenerator.png",
+    src: css,
     link: "https://to-css-generator.netlify.com/",
   },
   {
     title: "BATTLE ARENA",
     tech: "react",
-    src: "../images/bgbattlearena.jpg",
+    src: battle,
     link: "https://to-react-battle.netlify.com/",
   },
   {
     title: "COVID-19",
     tech: "react",
-    src: "../images/bgcovid.jpg",
+    src: covid,
     link: "https://to-covid.netlify.com/",
   },
   {
     title: "PIXEL ART",
     tech: "react",
-    src: "../images/bgpixel.png",
+    src: pixel,
     link: "https://to-pixel-art.netlify.com/",
   },
   {
     title: "GAME OF LIFE",
     tech: "react",
-    src: "../images/bggame.png",
+    src: gol,
     link: "https://to-gol.netlify.com/",
-  },
-  {
-    title: "AUTH TEST",
-    tech: "react",
-    src: "../images/bgauth.png",
-    link: "https://to-auth.netlify.com/",
   },
   {
     title: "HANGMAN",
     tech: "react",
-    src: "../images/bghangman.jpg",
+    src: hangman,
     link: "https://to-hangman.netlify.com/",
   },
   {
     title: "TICK@POLI",
     tech: "react",
-    src: "../images/bgpoli.jpg",
+    src: ticket,
     link: "https://ticket-polimi.netlify.com/",
   },
 ]

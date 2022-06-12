@@ -17,7 +17,7 @@ const Projects = () => {
         <ul>
           {projects.map((elem: List) => {
             return (
-              <li>
+              <li key={elem.src}>
                 <ProjectCard
                   title={elem.title}
                   link={elem.link}
