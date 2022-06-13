@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 //--- CONTEXT
 import { useContext } from "react"
 import { ContextData } from "../context"
-// INTERFACE
+//--- INTERFACE
 import { List } from "../database/menu"
 
 const Menu = () => {

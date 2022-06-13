@@ -2,7 +2,6 @@
 import ContextProvider from "./context"
 //--- ROUTER
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-//--- COMPONENTS
 import Title from "./components/Title"
 import Menu from "./components/Menu"
 import Explorer from "./components/Explorer"

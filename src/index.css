@@ -43,7 +43,7 @@ code {
   flex-grow: 1;
   display: grid;
   grid-template-columns: 60px 180px 1fr;
-  grid-template-rows: 35px 40px 1fr;
+  grid-template-rows: 35px 40px auto;
   grid-template-areas:
     "title title title"
     "side-menu explorer navbar"
@@ -205,11 +205,12 @@ a {
 /*------*/
 /* HOME */
 /*------*/
+
 .home__content {
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(3, 100px) 1fr;
   grid-template-areas:
     "number  ."
     "number  ."
@@ -276,7 +277,7 @@ a {
 /* PROJECTS */
 /*----------*/
 .projects__container {
-  margin: 1rem;
+  padding: 1rem;
 }
 .projects__content ul {
   display: flex;
@@ -292,9 +293,10 @@ a {
   overflow: hidden;
   width: 110px;
   margin: 0.5rem;
-  border: 1px solid cadetblue;
+  border: 5px ridge cadetblue;
   background-color: var(--black);
   border-radius: 5%;
+  box-shadow: 5px 5px 20px -3px black;
 }
 .card:hover .card__content {
   opacity: 1;
