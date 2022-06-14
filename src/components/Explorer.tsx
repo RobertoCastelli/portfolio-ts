@@ -1,12 +1,12 @@
 //--- ROUTER
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 //--- CONTEXT
-import { useContext } from "react"
-import { ContextData } from "../context"
+import { useContext } from "react";
+import { ContextData } from "../context";
 //--- ICONS
-import { VscChevronRight, VscChevronDown } from "react-icons/vsc"
+import { VscChevronRight, VscChevronDown } from "react-icons/vsc";
 //--- INTERFACE
-import { List } from "../database/explorer"
+import { List } from "../database/explorer";
 
 const Explorer = () => {
   //--- CONTEXT
@@ -15,7 +15,7 @@ const Explorer = () => {
     handleAccordion,
     list,
   }: { isExpanded: boolean; handleAccordion: () => void; list: List[] } =
-    useContext(ContextData)
+    useContext(ContextData);
 
   return (
     <div className="explorer__container">
@@ -51,12 +51,12 @@ const Explorer = () => {
                     </div>
                   </NavLink>
                 </li>
-              )
+              );
             })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Explorer
+export default Explorer;

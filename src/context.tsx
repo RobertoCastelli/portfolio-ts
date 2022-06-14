@@ -1,25 +1,26 @@
 //--- CONTEXT
-import { createContext, ReactNode, useState } from "react"
+import { createContext, ReactNode, useState } from "react";
 //--- DATABASE
-import { mastering, learning } from "./database/tools"
-import { listTop, listBottom } from "./database/menu"
-import { list } from "./database/explorer"
-import { projects } from "./database/projects"
+import { mastering, learning } from "./database/tools";
+import { listTop, listBottom } from "./database/menu";
+import { list } from "./database/explorer";
+import { projects } from "./database/projects";
+import { posts } from "./database/posts";
 
 //--- INTERFACE
 interface ContextProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 //--- CONTEXT
-export const ContextData = createContext<any>({})
+export const ContextData = createContext<any>({});
 
 const ContextProvider = (props: ContextProps) => {
   //--- STATES
-  const [isExpanded, setisExpanded] = useState(false)
+  const [isExpanded, setisExpanded] = useState(false);
 
-  //--- SET ACCORDION STATE
-  const handleAccordion = () => setisExpanded(!isExpanded)
+  //--- SET ACCORDION OPEN/CLOSE
+  const handleAccordion = () => setisExpanded(!isExpanded);
 
   return (
     <ContextData.Provider
@@ -32,11 +33,12 @@ const ContextProvider = (props: ContextProps) => {
         listBottom,
         list,
         projects,
+        posts,
       }}
     >
       {props.children}
     </ContextData.Provider>
-  )
-}
+  );
+};
 
-export default ContextProvider
+export default ContextProvider;
