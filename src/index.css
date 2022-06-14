@@ -278,7 +278,6 @@ a {
 /*----------*/
 .projects__container {
   margin: 1rem;
-  max-width: 372px;
 }
 .projects__content ul {
   display: flex;
