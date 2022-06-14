@@ -1,6 +1,5 @@
 //--- ICONS
 import { GrLinkedin, GrGithub } from "react-icons/gr"
-
 //--- IMAGES
 import potrait from "../../images/roberto.jpg"
 

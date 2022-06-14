@@ -35,15 +35,14 @@ const Home = () => {
           <li>19</li>
           <li>20</li>
           <li>21</li>
-          <li>22</li>
-          <li>23</li>
+
           <li>
-            24 export default{" "}
+            22 export default{" "}
             <Link to="/about">
               <button type="button">about me</button>
             </Link>
           </li>
-          <li>25</li>
+          <li>23</li>
         </ul>
         <img src={icona} alt="icona" />
         <div className="home__name">

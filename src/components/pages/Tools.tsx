@@ -16,7 +16,7 @@ const Tools = () => {
           <li>&nbsp;1 &nbsp;.mastering {"{"}</li>
           {mastering.map((elem: List) => {
             return (
-              <li>
+              <li key={elem.num}>
                 &nbsp;{elem.num}{" "}
                 <span>
                   &nbsp;&nbsp;
@@ -30,7 +30,7 @@ const Tools = () => {
           <li>11 &nbsp;.learning {"{"}</li>
           {learning.map((elem: List) => {
             return (
-              <li>
+              <li key={elem.num}>
                 {elem.num}{" "}
                 <span>
                   &nbsp;&nbsp;

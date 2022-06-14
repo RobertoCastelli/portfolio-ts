@@ -16,7 +16,7 @@ export const ContextData = createContext<any>({})
 
 const ContextProvider = (props: ContextProps) => {
   //--- STATES
-  const [isExpanded, setisExpanded] = useState<boolean>(false)
+  const [isExpanded, setisExpanded] = useState(false)
 
   //--- SET ACCORDION STATE
   const handleAccordion = () => setisExpanded(!isExpanded)
