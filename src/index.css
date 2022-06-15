@@ -343,6 +343,10 @@ a {
 /*------*/
 /* BLOG */
 /*------*/
+.blog__container ul {
+  list-style: none;
+  padding: 0;
+}
 
 /*--------*/
 /* GITHUB */
@@ -504,4 +508,90 @@ a {
 .footer__icons li {
   display: flex;
   margin: 0 0.5rem;
+}
+
+.post__wrapper {
+  padding: 2%;
+}
+
+.post__wrapper .post {
+  margin: 0 auto;
+}
+
+/*-------*/
+/* POSTS */
+/*-------*/
+.post__content {
+  max-width: 300px;
+  background-color: #feefde;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 2px 8px rgba(100, 100, 100, 0.1);
+}
+
+.post__image-wrapper {
+  background-color: var(--black);
+  width: auto;
+  height: 100px;
+  overflow: hidden;
+}
+
+.post__image {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.post__image:hover {
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
+  transition: all 1s linear;
+}
+
+.post__box-wrapper {
+  display: grid;
+  padding: 0.5rem;
+  background-color: var(--black);
+}
+
+.post__title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.post__title::after {
+  content: "";
+  display: block;
+  margin-top: 0.5em;
+  width: 30px;
+  height: 5px;
+  background-color: orange;
+}
+
+.post__intro {
+  font-size: small;
+  padding-top: 0.5rem;
+  font-style: italic;
+}
+
+.post__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post__page {
+  color: var(--light-grey);
+  font-size: 10rem;
+  opacity: 0.2;
+  left: 50%;
+  bottom: -50%;
+  font-weight: bold;
+  position: absolute;
+}
+.post__tags {
+}
+.post__date {
+  justify-self: flex-end;
 }
