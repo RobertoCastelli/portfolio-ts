@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 //--- PAGES ROUTE ELEMENT
 import Home from "./components/pages/Home"
 import Projects from "./components/pages/Projects"
-import Blog from "./components/pages/Blog"
+import Posts from "./components/pages/Posts"
 import About from "./components/pages/About"
 import Tools from "./components/pages/Tools"
 
@@ -27,7 +27,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/Blog" element={<Blog />} />
+              <Route path="/Blog" element={<Posts />} />
               <Route path="/about" element={<About />} />
               <Route path="/tools" element={<Tools />} />
             </Routes>

@@ -1,5 +1,7 @@
-import { useContext } from "react"
+//--- ROUTE
+import { Link } from "react-router-dom"
 //--- CONTEXT
+import { useContext } from "react"
 import { ContextData } from "../../context"
 //--- INTERFACE
 import { List } from "../../database/projects"
@@ -13,7 +15,6 @@ const Projects = () => {
     <div className="projects__container">
       <div className="projects__content">
         {/* eslint-disable-next-line */}
-        <h1>// projects</h1>
         <ul>
           {projects.map((elem: List) => {
             return (
@@ -28,6 +29,9 @@ const Projects = () => {
             )
           })}
         </ul>
+        <Link to="/tools">
+          <button type="button">tools</button>
+        </Link>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
-import { Posts } from "../../database/posts"
+import { PostsList } from "../../database/posts"
 
-const PostCard = (props: Posts) => {
+const PostCard = (props: PostsList) => {
   return (
     <div className="post__wrapper">
       <div className="post__content">
@@ -9,12 +9,9 @@ const PostCard = (props: Posts) => {
         </div>
         <div className="post__box-wrapper">
           <div className="post__date">{props.date}</div>
-          <div className="text__box-content">
-            <h1 className="post__title">{props.title}</h1>
-            <div className="post__intro">{props.intro}</div>
-          </div>
+          <h1 className="post__title">{props.title}</h1>
+          <div className="post__intro">{props.intro}</div>
           <div className="post__footer">
-            <div className="post__tags">{props.tags}</div>
             <div className="post__page">{props.page}</div>
           </div>
         </div>

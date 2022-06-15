@@ -3,15 +3,15 @@ import { useContext } from "react"
 import { ContextData } from "../../context"
 //--- COMPONENT
 import PostCard from "./PostCard"
-import { Posts } from "../../database/posts"
+import { PostsList } from "../../database/posts"
 
-const Blog = () => {
+const Posts = () => {
   const { posts } = useContext(ContextData)
 
   return (
-    <div className="blog__container">
+    <div className="posts__container">
       <ul>
-        {posts.map((post: Posts) => {
+        {posts.reverse().map((post: PostsList) => {
           return (
             <li key={post.title}>
               <PostCard
@@ -30,4 +30,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Posts
