@@ -13,10 +13,11 @@ import meetup from "../images/posts/meetup.png"
 import freecodecamp from "../images/posts/freecodecamp.png"
 import gatsby from "../images/posts/gatsby.jpg"
 import year from "../images/posts/year.jpg"
-import opensource from "../images/posts/opensource.png"
+import opensource from "../images/posts/opensource.jpg"
 import gol from "../images/posts/gol.png"
 import typescript from "../images/posts/typescript.png"
 
+//--- INTERFACE
 export interface PostsList {
   title: string
   intro: string
@@ -54,7 +55,7 @@ export const posts: PostsList[] = [
     page: "03",
   },
   {
-    title: "LEARN ON HOLIDAYS",
+    title: "HOLIDAYS 1",
     intro:
       "The holidays are only holy if we make them so.~ Marianne Williamson",
     date: "01-09-2019",
@@ -63,7 +64,7 @@ export const posts: PostsList[] = [
     page: "04",
   },
   {
-    title: "LEARN ON HOLIDAYS",
+    title: "HOLIDAYS 2",
     date: "15-09-2019",
     image: holiday,
     intro:
@@ -72,7 +73,7 @@ export const posts: PostsList[] = [
     page: "05",
   },
   {
-    title: "MIND SET",
+    title: "MINDSET",
     date: "01-10-2019",
     image: mind,
     intro:
@@ -116,7 +117,7 @@ export const posts: PostsList[] = [
     page: "10",
   },
   {
-    title: "FREE CODE CAMP",
+    title: "FREE CODE CAMP 1",
     date: "01-01-2020",
     intro:
       "If you are willing to learn, no one can help you. If you are determined, no one can stop you ~ Anonymous",
@@ -125,7 +126,7 @@ export const posts: PostsList[] = [
     page: "11",
   },
   {
-    title: "FREE CODE CAMP",
+    title: "FREE CODE CAMP 2",
     date: "15-02-2020",
     intro:
       "To acquire knowledge, one must study, but to acquire wisdom, one must observe ~ Marilyn vos Savant",
@@ -160,7 +161,7 @@ export const posts: PostsList[] = [
     page: "15",
   },
   {
-    title: "LEAR ON HOLIDAYS",
+    title: "HOLIDAYS 3",
     date: "30-08-2020",
     intro:
       "A mind which closely pursues one study must infallibly arrive at great proficiency in that study ~ Mary Shelley",
@@ -188,7 +189,7 @@ export const posts: PostsList[] = [
   },
   {
     title: "TYPESCRIPT",
-    date: "2021-03-01",
+    date: "01-03-2021",
     intro: "That isn't writing at all, it's typing ~ Truman Capote",
     image: typescript,
     tags: ["typescript"],

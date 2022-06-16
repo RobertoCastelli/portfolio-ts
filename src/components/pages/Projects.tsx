@@ -1,5 +1,5 @@
 //--- ROUTE
-import { Link } from "react-router-dom"
+/* import { Link } from "react-router-dom" */
 //--- CONTEXT
 import { useContext } from "react"
 import { ContextData } from "../../context"
@@ -9,12 +9,22 @@ import { List } from "../../database/projects"
 import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
-  const { projects } = useContext(ContextData)
+  const { projects, handleBreadcrumb } = useContext(ContextData)
 
   return (
     <div className="projects__container">
       <div className="projects__content">
         {/* eslint-disable-next-line */}
+        <div className="projects__tags">
+          <ul>
+            <li onClick={() => handleBreadcrumb()}>&nbsp;all</li>
+            <li>&nbsp;JS</li>
+            <li>&nbsp;react</li>
+            <li>&nbsp;vue</li>
+            <li>&nbsp;API</li>
+            <li>&nbsp;canvas</li>
+          </ul>
+        </div>
         <ul>
           {projects.map((elem: List) => {
             return (
@@ -29,9 +39,9 @@ const Projects = () => {
             )
           })}
         </ul>
-        <Link to="/tools">
+        {/*   <Link to="/tools">
           <button type="button">tools</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

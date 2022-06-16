@@ -299,6 +299,13 @@ a {
   background-color: orange;
   transition: all 0.2s linear;
 }
+.projects__tags li {
+  color: var(--light-grey);
+  cursor: pointer;
+}
+.projects__tags li::after {
+  content: " >";
+}
 .card {
   background-color: var(--black);
   border-radius: 0.5rem;

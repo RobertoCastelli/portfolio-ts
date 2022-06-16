@@ -42,11 +42,24 @@ export const projects: List[] = [
     tech: "JS",
     link: "https://to-night-run.netlify.com/",
   },
+
   {
-    title: "POKEDEX",
-    tech: "API",
-    src: pokedex,
-    link: "https://to-pokedex.netlify.com/",
+    title: "GAME OF L.",
+    tech: "react",
+    src: gol,
+    link: "https://to-gol.netlify.com/",
+  },
+  {
+    title: "COVID-19",
+    tech: "react",
+    src: covid,
+    link: "https://to-covid.netlify.com/",
+  },
+  {
+    title: "BATTLE",
+    tech: "react",
+    src: battle,
+    link: "https://to-react-battle.netlify.com/",
   },
   {
     title: "ADVICE",
@@ -55,10 +68,34 @@ export const projects: List[] = [
     link: "https://to-advice.netlify.com/",
   },
   {
+    title: "PIXEL ART",
+    tech: "react",
+    src: pixel,
+    link: "https://to-pixel-art.netlify.com/",
+  },
+  {
+    title: "E-STORE",
+    tech: "react",
+    src: store,
+    link: "https://to-store.netlify.com/",
+  },
+  {
     title: "WEATHER 1",
     tech: "API",
     src: weather,
     link: "https://to-weather.netlify.com/",
+  },
+  {
+    title: "POKEDEX",
+    tech: "API",
+    src: pokedex,
+    link: "https://to-pokedex.netlify.com/",
+  },
+  {
+    title: "POMOCLOCK",
+    tech: "JS",
+    src: pomodoro,
+    link: "https://to-pomodoro.netlify.com/",
   },
   {
     title: "8-BALL",
@@ -102,12 +139,7 @@ export const projects: List[] = [
     src: rock,
     link: "https://to-rock.netlify.com/",
   },
-  {
-    title: "POMOCLOCK",
-    tech: "JS",
-    src: pomodoro,
-    link: "https://to-pomodoro.netlify.com/",
-  },
+
   {
     title: "GO FIX IT",
     tech: "JS",
@@ -139,12 +171,7 @@ export const projects: List[] = [
     src: paint,
     link: "https://to-paint.netlify.com/",
   },
-  {
-    title: "E-STORE",
-    tech: "react",
-    src: store,
-    link: "https://to-store.netlify.com/",
-  },
+
   {
     title: "MOVIES",
     tech: "API",
@@ -163,30 +190,7 @@ export const projects: List[] = [
     src: css,
     link: "https://to-css-generator.netlify.com/",
   },
-  {
-    title: "BATTLE",
-    tech: "react",
-    src: battle,
-    link: "https://to-react-battle.netlify.com/",
-  },
-  {
-    title: "COVID-19",
-    tech: "react",
-    src: covid,
-    link: "https://to-covid.netlify.com/",
-  },
-  {
-    title: "PIXEL ART",
-    tech: "react",
-    src: pixel,
-    link: "https://to-pixel-art.netlify.com/",
-  },
-  {
-    title: "GAME OF L.",
-    tech: "react",
-    src: gol,
-    link: "https://to-gol.netlify.com/",
-  },
+
   {
     title: "HANGMAN",
     tech: "react",
