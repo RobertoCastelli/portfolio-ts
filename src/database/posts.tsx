@@ -82,7 +82,7 @@ export const posts: PostsList[] = [
     page: "07",
   },
   {
-    title: "pag.8 BODY & MIND",
+    title: "BODY & MIND",
     date: "2019-11-22",
     image: sport,
     intro:
