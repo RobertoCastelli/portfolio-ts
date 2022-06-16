@@ -304,8 +304,8 @@ a {
   border-radius: 0.5rem;
   border: 1px solid var(--light-grey);
   box-shadow: 5px 5px 20px -3px black;
-  overflow: hidden;
   margin: 0.5rem;
+  overflow: hidden;
   position: relative;
   width: 110px;
 }
@@ -391,6 +391,7 @@ a {
   background-color: var(--black);
   display: grid;
   padding: 0.5rem;
+  height: 200px;
 }
 .post__title {
   color: cadetblue;

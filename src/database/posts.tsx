@@ -1,21 +1,26 @@
 //--- POSTS
-import plan from "../images/posts/plan.jpg"
-import resources from "../images/posts/resources.jpg"
-import vim from "../images/posts/vim.png"
-import ups from "../images/posts/ups.jpg"
-import project from "../images/posts/project.jpg"
-import holiday from "../images/posts/holiday.png"
-import holidayAlt from "../images/posts/holidayAlt.jpg"
-import mind from "../images/posts/mind.jpg"
-import sport from "../images/posts/sport.jpg"
+import plan from "../images/posts/plan.jpg";
+import resources from "../images/posts/resources.jpg";
+import vim from "../images/posts/vim.png";
+import ups from "../images/posts/ups.jpg";
+import project from "../images/posts/project.jpg";
+import holiday from "../images/posts/holiday.png";
+import holidayAlt from "../images/posts/holidayAlt.jpg";
+import mind from "../images/posts/mind.jpg";
+import sport from "../images/posts/sport.jpg";
+import react from "../images/posts/react.png";
+import meetup from "../images/posts/meetup.png";
+import freecodecamp from "../images/posts/freecodecamp.png";
+import gatsby from "../images/posts/gatsby.jpg";
+import year from "../images/posts/year.jpg";
 
 export interface PostsList {
-  title: string
-  intro: string
-  date: string
-  image: string
-  tags: string[]
-  page: string
+  title: string;
+  intro: string;
+  date: string;
+  image: string;
+  tags: string[];
+  page: string;
 }
 
 export const posts: PostsList[] = [
@@ -82,12 +87,66 @@ export const posts: PostsList[] = [
     page: "07",
   },
   {
-    title: "pag.8 BODY & MIND",
-    date: "2019-11-22",
+    title: "BODY & MIND",
+    date: "22-11-2019",
     image: sport,
     intro:
       "Sports not only build better athletes but also better people ~ Julie Foudy",
     tags: ["generic", "react"],
     page: "08",
   },
-]
+  {
+    title: "TIME TO REACT",
+    date: "12-12-2019",
+    image: react,
+    intro:
+      "Life is 10% what happens to you and 90% how you REACT to it ~ Charles R. Swindoll",
+    tags: ["react", "tools"],
+    page: "09",
+  },
+  {
+    title: "MEET UP",
+    date: "17-12-2019",
+    intro:
+      "I meet people and they become chapters in my stories. ~ Avijeet Das",
+    image: meetup,
+    tags: ["generic"],
+    page: "10",
+  },
+  {
+    title: "FREE CODE CAMP",
+    date: "01-01-2020",
+    intro:
+      "If you are willing to learn, no one can help you. If you are determined, no one can stop you ~ Anonymous",
+    image: freecodecamp,
+    tags: ["js", "tools"],
+    page: "11",
+  },
+  {
+    title: "FREE CODE CAMP",
+    date: "15-02-2022",
+    intro:
+      "To acquire knowledge, one must study, but to acquire wisdom, one must observe ~ Marilyn vos Savant",
+    image: freecodecamp,
+    tags: ["js", "tools"],
+    page: "12",
+  },
+  {
+    title: "THE GREAT GATSBY",
+    date: "03-06-2020",
+    intro:
+      "My life has got to be like this, it's got to keep going up ~ Gatsby",
+    image: gatsby,
+    tags: ["react", "gatsby"],
+    page: "13",
+  },
+  {
+    title: "ONE YEAR LATER",
+    date: "07-06-2020",
+    intro:
+      "Life is like riding a bicycle. To keep your balance, you must keep moving. ~ Albert Einstein",
+    image: year,
+    tags: ["js", "react", "gatsby"],
+    page: "14",
+  },
+];
