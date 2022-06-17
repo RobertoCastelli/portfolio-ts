@@ -1,5 +1,5 @@
 //--- INTERFACE
-import { List } from "../../database/projects"
+import { List } from "../database/projects";
 
 const ProjectCard = (props: List) => {
   return (
@@ -12,7 +12,7 @@ const ProjectCard = (props: List) => {
         </div>
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

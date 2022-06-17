@@ -1,15 +1,15 @@
 //--- ROUTE
 /* import { Link } from "react-router-dom" */
 //--- CONTEXT
-import { useContext } from "react"
-import { ContextData } from "../../context"
+import { useContext } from "react";
+import { ContextData } from "../context";
 //--- INTERFACE
-import { List } from "../../database/projects"
+import { List } from "../database/projects";
 //--- COMPONENT
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  const { projects, handleBreadcrumb } = useContext(ContextData)
+  const { projects, handleBreadcrumb } = useContext(ContextData);
 
   return (
     <div className="projects__container">
@@ -36,7 +36,7 @@ const Projects = () => {
                   tech={elem.tech}
                 />
               </li>
-            )
+            );
           })}
         </ul>
         {/*   <Link to="/tools">
@@ -44,7 +44,7 @@ const Projects = () => {
         </Link> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

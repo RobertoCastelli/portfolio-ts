@@ -1,12 +1,12 @@
 //--- CONTEXT
-import { useContext } from "react"
-import { ContextData } from "../../context"
+import { useContext } from "react";
+import { ContextData } from "../context";
 //--- COMPONENT
-import PostCard from "./PostCard"
-import { PostsList } from "../../database/posts"
+import PostCard from "./PostCard";
+import { PostsList } from "../database/posts";
 
 const Posts = () => {
-  const { posts } = useContext(ContextData)
+  const { posts } = useContext(ContextData);
 
   return (
     <div className="posts__container">
@@ -23,11 +23,11 @@ const Posts = () => {
                 page={post.page}
               />
             </li>
-          )
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Posts
+export default Posts;

@@ -1,7 +1,7 @@
 //--- ROUTER
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 //--- IMAGES
-import icona from "../../images/logo.png"
+import icona from "../images/logo.png";
 
 const Home = () => {
   return (
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

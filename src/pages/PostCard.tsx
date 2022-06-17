@@ -1,4 +1,4 @@
-import { PostsList } from "../../database/posts"
+import { PostsList } from "../database/posts";
 
 const PostCard = (props: PostsList) => {
   return (
@@ -17,7 +17,7 @@ const PostCard = (props: PostsList) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostCard
+export default PostCard;

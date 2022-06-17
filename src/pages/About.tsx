@@ -1,7 +1,7 @@
 //--- ICONS
-import { GrLinkedin, GrGithub } from "react-icons/gr"
+import { GrLinkedin, GrGithub } from "react-icons/gr";
 //--- IMAGES
-import potrait from "../../images/roberto.jpg"
+import potrait from "../images/roberto.jpg";
 
 const About = () => {
   return (
@@ -55,7 +55,7 @@ const About = () => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
