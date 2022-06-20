@@ -364,6 +364,7 @@ a {
 /*------*/
 .blog__container {
   padding: 1rem;
+  color: var(--light-grey);
 }
 .blog__content h1 {
   color: orange;
@@ -382,8 +383,8 @@ a {
   margin-bottom: 1rem;
 }
 .blog__content img:hover {
-  transition: all 0.3s ease-in;
   animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all 0.3s ease-in;
 }
 @keyframes slide-right {
   0% {
@@ -396,6 +397,10 @@ a {
 .blog__content section {
   margin-bottom: 1rem;
 }
+.blog__text {
+  color: var(--white);
+  margin-left: 1rem;
+}
 .blog__content button {
   color: orange;
   cursor: pointer;
@@ -404,6 +409,7 @@ a {
   border: 1px solid orange;
   font-size: large;
   font-family: var(--fira-font);
+  margin-left: 1rem;
 }
 .blog__content button:hover {
   background-color: orange;
