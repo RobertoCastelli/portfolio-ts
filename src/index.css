@@ -302,9 +302,7 @@ a {
 .projects__tags li {
   color: var(--light-grey);
   cursor: pointer;
-}
-.projects__tags li::after {
-  content: " >";
+  margin-right: 1rem;
 }
 .card {
   background-color: var(--black);

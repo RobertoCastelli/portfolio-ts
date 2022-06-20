@@ -1,10 +1,10 @@
 //--- CONTEXT
-import { createContext, ReactNode, useState } from "react"
+import { createContext, ReactNode, useState, useEffect } from "react"
 //--- DATABASE
 import { mastering, learning } from "./database/tools"
 import { listTop, listBottom } from "./database/menu"
 import { list } from "./database/explorer"
-import { projects } from "./database/projects"
+import { projects, List } from "./database/projects"
 import { posts } from "./database/posts"
 
 //--- INTERFACE
@@ -18,19 +18,32 @@ export const ContextData = createContext<any>({})
 const ContextProvider = (props: ContextProps) => {
   //--- STATES
   const [isExpanded, setisExpanded] = useState(false)
+  const [breadCrumbs, setBreadCrumbs] = useState<string[]>([])
+  const [filteredProjects, setFilteredProjects] = useState<List[]>([])
 
   //--- SET ACCORDION OPEN/CLOSE
   const handleAccordion = () => setisExpanded(!isExpanded)
 
-  //--- GET BREADCRUMBS (project tech array)
+  //--- GET UNIQUE TECH FROM PROJECTS FOR BREADCRUMS LIST
+  useEffect(() => {
+    const bread = projects.map((post) => post.tech)
+    const flatBread = bread.flat()
+    const unique = [...new Set(flatBread)]
+    setBreadCrumbs(unique)
+  }, [])
 
-  const crumb = document.querySelectorAll(".projects__tags li")
-  crumb.forEach((item) => {
-    item.addEventListener("click", click)
-  })
+  //--- GET ALL PROJECTS ON LOAD
+  useEffect(() => setFilteredProjects(projects), [])
 
-  function click(e: any) {
-    console.log(e)
+  //--- GET BREADCRUM TO FILTER THE PROJECT LIST
+  const getBreadCrumb = (breadCrumb: string) => {
+    if (breadCrumb !== "all") {
+      setFilteredProjects(
+        projects.filter((project: List) => project.tech === breadCrumb)
+      )
+    } else {
+      setFilteredProjects(projects)
+    }
   }
 
   return (
@@ -45,6 +58,9 @@ const ContextProvider = (props: ContextProps) => {
         list,
         projects,
         posts,
+        breadCrumbs,
+        getBreadCrumb,
+        filteredProjects,
       }}
     >
       {props.children}

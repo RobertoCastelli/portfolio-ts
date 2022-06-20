@@ -9,24 +9,26 @@ import { List } from "../database/projects"
 import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
-  const { projects } = useContext(ContextData)
+  const { filteredProjects, breadCrumbs, getBreadCrumb } =
+    useContext(ContextData)
 
   return (
     <div className="projects__container">
       <div className="projects__content">
-        {/* eslint-disable-next-line */}
         <div className="projects__tags">
           <ul>
-            <li>all</li>
-            <li>JS</li>
-            <li>react</li>
-            <li>vue</li>
-            <li>API</li>
-            <li>canvas</li>
+            <li onClick={() => getBreadCrumb("all")}>ALL {">"}</li>
+            {breadCrumbs.map((bread: string) => {
+              return (
+                <li key={bread} onClick={() => getBreadCrumb(bread)}>
+                  {bread} {">"}
+                </li>
+              )
+            })}
           </ul>
         </div>
         <ul>
-          {projects.map((elem: List) => {
+          {filteredProjects.map((elem: List) => {
             return (
               <li key={elem.src}>
                 <ProjectCard

@@ -10,6 +10,7 @@ const Blog = () => {
       <div className="blog__content">
         {/* eslint-disable-next-line */}
         <h1>// Diary of an Impostor</h1>
+        <div>{"<img src={impostor} alt='logo' />"}</div>
         <Link to="/posts">
           <img src={sheep} alt="sheep" />
         </Link>

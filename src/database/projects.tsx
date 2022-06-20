@@ -38,8 +38,8 @@ export interface List {
 export const projects: List[] = [
   {
     title: "NIGHT RUN",
-    src: nightrun,
     tech: "JS",
+    src: nightrun,
     link: "https://to-night-run.netlify.com/",
   },
 
