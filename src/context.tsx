@@ -1,38 +1,37 @@
 //--- CONTEXT
-import { createContext, ReactNode, useState, useEffect } from "react";
+import { createContext, ReactNode, useState } from "react"
 //--- DATABASE
-import { mastering, learning } from "./database/tools";
-import { listTop, listBottom } from "./database/menu";
-import { list } from "./database/explorer";
-import { projects } from "./database/projects";
-import { posts } from "./database/posts";
+import { mastering, learning } from "./database/tools"
+import { listTop, listBottom } from "./database/menu"
+import { list } from "./database/explorer"
+import { projects } from "./database/projects"
+import { posts } from "./database/posts"
 
 //--- INTERFACE
 interface ContextProps {
-  children: ReactNode;
-}
-
-interface BreadCrumbs {
-  tech: string;
+  children: ReactNode
 }
 
 //--- CONTEXT
-export const ContextData = createContext<any>({});
+export const ContextData = createContext<any>({})
 
 const ContextProvider = (props: ContextProps) => {
   //--- STATES
-  const [isExpanded, setisExpanded] = useState(false);
-  const [breadCrumbs, setBreadCrumbs] = useState<BreadCrumbs[]>([]);
+  const [isExpanded, setisExpanded] = useState(false)
 
   //--- SET ACCORDION OPEN/CLOSE
-  const handleAccordion = () => setisExpanded(!isExpanded);
+  const handleAccordion = () => setisExpanded(!isExpanded)
 
   //--- GET BREADCRUMBS (project tech array)
-  useEffect(() => {
-    let test = projects.map((project: BreadCrumbs) => {
-      return project.tech;
-    });
-  }, []);
+
+  const crumb = document.querySelectorAll(".projects__tags li")
+  crumb.forEach((item) => {
+    item.addEventListener("click", click)
+  })
+
+  function click(e: any) {
+    console.log(e)
+  }
 
   return (
     <ContextData.Provider
@@ -50,7 +49,7 @@ const ContextProvider = (props: ContextProps) => {
     >
       {props.children}
     </ContextData.Provider>
-  );
-};
+  )
+}
 
-export default ContextProvider;
+export default ContextProvider

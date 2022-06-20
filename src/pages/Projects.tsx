@@ -1,15 +1,15 @@
 //--- ROUTE
 /* import { Link } from "react-router-dom" */
 //--- CONTEXT
-import { useContext } from "react";
-import { ContextData } from "../context";
+import { useContext } from "react"
+import { ContextData } from "../context"
 //--- INTERFACE
-import { List } from "../database/projects";
+import { List } from "../database/projects"
 //--- COMPONENT
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
-  const { projects, handleBreadcrumb } = useContext(ContextData);
+  const { projects } = useContext(ContextData)
 
   return (
     <div className="projects__container">
@@ -17,12 +17,12 @@ const Projects = () => {
         {/* eslint-disable-next-line */}
         <div className="projects__tags">
           <ul>
-            <li onClick={() => handleBreadcrumb()}>&nbsp;all</li>
-            <li>&nbsp;JS</li>
-            <li>&nbsp;react</li>
-            <li>&nbsp;vue</li>
-            <li>&nbsp;API</li>
-            <li>&nbsp;canvas</li>
+            <li>all</li>
+            <li>JS</li>
+            <li>react</li>
+            <li>vue</li>
+            <li>API</li>
+            <li>canvas</li>
           </ul>
         </div>
         <ul>
@@ -36,7 +36,7 @@ const Projects = () => {
                   tech={elem.tech}
                 />
               </li>
-            );
+            )
           })}
         </ul>
         {/*   <Link to="/tools">
@@ -44,7 +44,7 @@ const Projects = () => {
         </Link> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -359,6 +359,58 @@ a {
   transform: scaleX(1);
 }
 
+/*------*/
+/* BLOG */
+/*------*/
+.blog__container {
+  padding: 1rem;
+}
+.blog__content h1 {
+  color: orange;
+}
+.blog__content img {
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.blog__content img:hover {
+  transition: all 0.3s ease-in;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+.blog__content section {
+  margin-bottom: 1rem;
+}
+.blog__content button {
+  color: orange;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border: 1px solid orange;
+  font-size: large;
+  font-family: var(--fira-font);
+}
+.blog__content button:hover {
+  background-color: orange;
+  color: var(--light-black);
+  transition: all 0.2s linear;
+}
+
 /*-------*/
 /* POSTS */
 /*-------*/
