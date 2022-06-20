@@ -1,7 +1,7 @@
 //--- ICONS
-import { GrLinkedin, GrGithub } from "react-icons/gr";
+import { GrLinkedin, GrGithub } from "react-icons/gr"
 //--- IMAGES
-import potrait from "../images/roberto.jpg";
+import potrait from "../images/roberto.jpg"
 
 const About = () => {
   return (
@@ -10,6 +10,7 @@ const About = () => {
         {/* eslint-disable-next-line */}
         <h1>// about me </h1>
         <img src={potrait} alt="potrait" />
+
         <section>
           <div>function hello {"() {"}</div>
           <div className="about__text">
@@ -18,6 +19,7 @@ const About = () => {
           </div>
           <div>{"}"}</div>
         </section>
+
         <section>
           <div>function story {"() {"}</div>
           <div className="about__text">
@@ -33,6 +35,7 @@ const About = () => {
           </div>
           <div>{"}"}</div>
         </section>
+
         <section>
           <div>function links {"() {"}</div>
           <div className="about__links">
@@ -55,7 +58,7 @@ const About = () => {
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

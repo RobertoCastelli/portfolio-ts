@@ -9,7 +9,7 @@ import { List } from "../database/projects"
 import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
-  const { filteredProjects, breadCrumbs, getBreadCrumb } =
+  const { filteredProjects, breadCrumbs, breadCrumbTitle, getBreadCrumb } =
     useContext(ContextData)
 
   return (
@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="projects__content">
         <div className="projects__tags">
           <ul>
-            <li onClick={() => getBreadCrumb("all")}>ALL {">"}</li>
+            <li onClick={() => getBreadCrumb("all")}>all {">"}</li>
             {breadCrumbs.map((bread: string) => {
               return (
                 <li key={bread} onClick={() => getBreadCrumb(bread)}>
@@ -27,6 +27,8 @@ const Projects = () => {
             })}
           </ul>
         </div>
+        {/* // eslint-disable-next-line */}
+        <h1>// {breadCrumbTitle}</h1>
         <ul>
           {filteredProjects.map((elem: List) => {
             return (

@@ -278,6 +278,9 @@ a {
 .projects__container {
   padding: 1rem;
 }
+.projects__content h1 {
+  color: orange;
+}
 .projects__content ul {
   display: flex;
   flex-wrap: wrap;

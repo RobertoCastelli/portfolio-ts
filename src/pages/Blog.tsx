@@ -14,6 +14,7 @@ const Blog = () => {
         <Link to="/posts">
           <img src={sheep} alt="sheep" />
         </Link>
+
         <section>
           <div>{"<div className='wiki'>"}</div>
           <div className="blog__text">
@@ -22,6 +23,7 @@ const Blog = () => {
             competence".
           </div>
         </section>
+
         <section>
           <div className="blog__text">
             Since I have a strong passion for programming languages, I recently
@@ -29,6 +31,7 @@ const Blog = () => {
             field to enhance my career?
           </div>
         </section>
+
         <section>
           <div className="blog__text">
             This blog is a story in continuous evolution to keep track of my
@@ -36,10 +39,11 @@ const Blog = () => {
             people to share this adventure. Special thanks to Daniele Di Lucido
             & Jaga Santagostino, my mentors.
           </div>
-          <section>
-            <div className="blog__text">Roberto</div>
-            <div>{"</div>"}</div>
-          </section>
+        </section>
+
+        <section>
+          <div className="blog__text">Roberto</div>
+          <div>{"</div>"}</div>
         </section>
 
         <div>{"<button onClick={goToPosts}>"}</div>

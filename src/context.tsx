@@ -20,11 +20,12 @@ const ContextProvider = (props: ContextProps) => {
   const [isExpanded, setisExpanded] = useState(false)
   const [breadCrumbs, setBreadCrumbs] = useState<string[]>([])
   const [filteredProjects, setFilteredProjects] = useState<List[]>([])
+  const [breadCrumbTitle, setBreadCrumbTitle] = useState("")
 
   //--- SET ACCORDION OPEN/CLOSE
   const handleAccordion = () => setisExpanded(!isExpanded)
 
-  //--- GET UNIQUE TECH FROM PROJECTS FOR BREADCRUMS LIST
+  //--- GET UNIQUE TECH FROM PROJECTS LIST --> BREADCRUMS
   useEffect(() => {
     const bread = projects.map((post) => post.tech)
     const flatBread = bread.flat()
@@ -35,13 +36,17 @@ const ContextProvider = (props: ContextProps) => {
   //--- GET ALL PROJECTS ON LOAD
   useEffect(() => setFilteredProjects(projects), [])
 
-  //--- GET BREADCRUM TO FILTER THE PROJECT LIST
+  //--- GET BREADCRUMB TO FILTER THE PROJECT LIST
   const getBreadCrumb = (breadCrumb: string) => {
     if (breadCrumb !== "all") {
+      // set breadcrumb title
+      setBreadCrumbTitle(`${breadCrumb} projects`)
       setFilteredProjects(
         projects.filter((project: List) => project.tech === breadCrumb)
       )
     } else {
+      // set breadcrumb title
+      setBreadCrumbTitle("all projects")
       setFilteredProjects(projects)
     }
   }
@@ -61,6 +66,7 @@ const ContextProvider = (props: ContextProps) => {
         breadCrumbs,
         getBreadCrumb,
         filteredProjects,
+        breadCrumbTitle,
       }}
     >
       {props.children}
