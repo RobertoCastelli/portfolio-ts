@@ -7,6 +7,7 @@ import git from "../images/icons/git_icon.svg"
 import typescript from "../images/icons/ts_icon.svg"
 import firebase from "../images/icons/firebase_icon.svg"
 import vim from "../images/icons/vim_icon.svg"
+import markdown from "../images/icons/markdown_icon.svg"
 
 //--- INTERFACE
 export interface List {
@@ -51,6 +52,11 @@ export const mastering: List[] = [
     tool: "Firebase",
     icon: firebase,
     num: "8",
+  },
+  {
+    tool: "Markdown",
+    icon: markdown,
+    num: "9",
   },
 ]
 

@@ -9,11 +9,12 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 //--- PAGES ROUTE ELEMENT
 import Home from "./pages/Home"
+import About from "./pages/About"
+import Tools from "./pages/Tools"
 import Projects from "./pages/Projects"
 import Blog from "./pages/Blog"
 import Posts from "./pages/Posts"
-import About from "./pages/About"
-import Tools from "./pages/Tools"
+import Article from "./pages/Article"
 
 function App() {
   return (
@@ -27,11 +28,12 @@ function App() {
             <Menu />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/tools" element={<Tools />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/posts" element={<Posts />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/tools" element={<Tools />} />
+              <Route path="/article" element={<Article />} />
             </Routes>
           </div>
           <Footer />

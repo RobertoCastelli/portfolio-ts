@@ -7,6 +7,8 @@ import { list } from "./database/explorer"
 import { projects, List } from "./database/projects"
 import { posts } from "./database/posts"
 
+import uno from "./posts/001.md"
+
 //--- INTERFACE
 interface ContextProps {
   children: ReactNode
@@ -21,9 +23,16 @@ const ContextProvider = (props: ContextProps) => {
   const [breadCrumbs, setBreadCrumbs] = useState<string[]>([])
   const [filteredProjects, setFilteredProjects] = useState<List[]>([])
   const [breadCrumbTitle, setBreadCrumbTitle] = useState("")
+  const [article, setArticle] = useState("")
 
   //--- SET ACCORDION OPEN/CLOSE
   const handleAccordion = () => setisExpanded(!isExpanded)
+
+  useEffect(() => {
+    fetch(uno)
+      .then((res) => res.text())
+      .then((text) => setArticle(text))
+  })
 
   //--- GET UNIQUE TECH FROM PROJECTS LIST --> BREADCRUMS
   useEffect(() => {
@@ -67,6 +76,7 @@ const ContextProvider = (props: ContextProps) => {
         getBreadCrumb,
         filteredProjects,
         breadCrumbTitle,
+        article,
       }}
     >
       {props.children}
