@@ -359,6 +359,9 @@ a {
 .card:hover .card__title::after {
   transform: scaleX(1);
 }
+.projects__content label {
+  color: var(--white);
+}
 
 /*------*/
 /* BLOG */

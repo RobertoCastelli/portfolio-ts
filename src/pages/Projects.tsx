@@ -1,5 +1,5 @@
 //--- ROUTE
-/* import { Link } from "react-router-dom" */
+import { Link } from "react-router-dom"
 //--- CONTEXT
 import { useContext } from "react"
 import { ContextData } from "../context"
@@ -28,7 +28,7 @@ const Projects = () => {
           </ul>
         </div>
         {/* // eslint-disable-next-line */}
-        <h1>// {breadCrumbTitle}</h1>
+        <h1>{breadCrumbTitle ? `// ${breadCrumbTitle}` : "// all projects"}</h1>
         <ul>
           {filteredProjects.map((elem: List) => {
             return (
@@ -43,9 +43,12 @@ const Projects = () => {
             )
           })}
         </ul>
-        {/*   <Link to="/tools">
-          <button type="button">tools</button>
-        </Link> */}
+        <Link to="/tools">
+          <label htmlFor="tools">made w/ ❤ using</label>
+          <button name="tools" type="button">
+            tools
+          </button>
+        </Link>
       </div>
     </div>
   )
