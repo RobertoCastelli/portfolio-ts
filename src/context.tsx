@@ -36,6 +36,7 @@ const ContextProvider = (props: ContextProps) => {
           .then((text) => setArticle(text))
       }
     })
+    return article
   }
 
   //--- GET UNIQUE TECH FROM PROJECTS LIST --> BREADCRUMS
