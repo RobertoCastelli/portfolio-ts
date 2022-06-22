@@ -29,7 +29,7 @@ const ContextProvider = (props: ContextProps) => {
 
   //--- FETCH BLOG ARTICLES
   const handlePost = (page: string) => {
-    return articles.map((elem: { page: string; article: string }) => {
+    articles.map((elem: { page: string; article: string }) => {
       if (elem.page === page) {
         return fetch(elem.article)
           .then((res) => res.text())
