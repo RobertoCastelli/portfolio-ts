@@ -9,7 +9,7 @@ const Blog = () => {
     <div className="blog__container">
       <div className="blog__content">
         {/* eslint-disable-next-line */}
-        <h1>// Diary of an Impostor</h1>
+        <h1>// diary of an impostor</h1>
         <div>{"<img src={impostor} alt='logo' />"}</div>
         <Link to="/posts">
           <img src={sheep} alt="sheep" />
@@ -21,14 +21,6 @@ const Blog = () => {
             "Impostor syndrome is a psychological pattern in which an individual
             doubts their accomplishments despite external evidence of their
             competence".
-          </div>
-        </section>
-
-        <section>
-          <div className="blog__text">
-            Since I have a strong passion for programming languages, I recently
-            asked myself: why not bring into fruition my avid interest in this
-            field to enhance my career?
           </div>
         </section>
 

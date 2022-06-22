@@ -6,8 +6,7 @@ import { listTop, listBottom } from "./database/menu"
 import { list } from "./database/explorer"
 import { projects, List } from "./database/projects"
 import { posts } from "./database/posts"
-
-import uno from "./posts/001.md"
+import { articles } from "./database/articles"
 
 //--- INTERFACE
 interface ContextProps {
@@ -28,11 +27,16 @@ const ContextProvider = (props: ContextProps) => {
   //--- SET ACCORDION OPEN/CLOSE
   const handleAccordion = () => setisExpanded(!isExpanded)
 
-  useEffect(() => {
-    fetch(uno)
-      .then((res) => res.text())
-      .then((text) => setArticle(text))
-  })
+  //--- FETCH BLOG ARTICLES
+  const handlePost = (page: string) => {
+    articles.map((elem: { page: string; article: string }) => {
+      if (elem.page === page) {
+        fetch(elem.article)
+          .then((res) => res.text())
+          .then((text) => setArticle(text))
+      }
+    })
+  }
 
   //--- GET UNIQUE TECH FROM PROJECTS LIST --> BREADCRUMS
   useEffect(() => {
@@ -76,6 +80,7 @@ const ContextProvider = (props: ContextProps) => {
         getBreadCrumb,
         filteredProjects,
         breadCrumbTitle,
+        handlePost,
         article,
       }}
     >
