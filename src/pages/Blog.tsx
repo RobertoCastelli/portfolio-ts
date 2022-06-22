@@ -31,12 +31,10 @@ const Blog = () => {
             people to share this adventure. Special thanks to Daniele Di Lucido
             & Jaga Santagostino, my mentors.
           </div>
-        </section>
-
-        <section>
-          <div className="blog__text">Roberto</div>
           <div>{"</div>"}</div>
         </section>
+
+        <section></section>
 
         <div>{"<button onClick={goToPosts}>"}</div>
         <Link to="/posts">
