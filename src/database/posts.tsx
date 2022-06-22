@@ -27,6 +27,7 @@ export interface PostsList {
   page: string
 }
 
+//--- POSTS LIST
 export const posts: PostsList[] = [
   {
     title: "PLANNING",

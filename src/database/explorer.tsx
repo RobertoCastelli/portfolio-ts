@@ -1,17 +1,17 @@
 //--- ICONS
-import react from "../images/icons/react_icon.svg";
-import js from "../images/icons/js_icon.svg";
-import markdown from "../images/icons/markdown_icon.svg";
+import react from "../images/icons/react_icon.svg"
+import js from "../images/icons/js_icon.svg"
+import markdown from "../images/icons/markdown_icon.svg"
 
 //--- INTERFACE
 export interface List {
-  id: number;
-  link: string;
-  route: string;
-  icon: string;
+  id: number
+  link: string
+  route: string
+  icon: string
 }
 
-//--- LIST
+//--- EXPLORER LIST
 export const list: List[] = [
   {
     id: 1,
@@ -31,4 +31,4 @@ export const list: List[] = [
     route: "/blog",
     icon: markdown,
   },
-];
+]

@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown"
 const Article = () => {
   const { article } = useContext(ContextData)
   return (
-    <div>
+    <div className="article__container">
       <ReactMarkdown children={article}></ReactMarkdown>
     </div>
   )

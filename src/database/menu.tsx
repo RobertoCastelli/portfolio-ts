@@ -14,7 +14,7 @@ export interface List {
   route: string
 }
 
-//--- LIST TOP
+//--- SIDE MENU LIST TOP
 export const listTop: List[] = [
   {
     id: 1,
@@ -33,7 +33,7 @@ export const listTop: List[] = [
   },
 ]
 
-//--- LIST BOTTOM
+//--- SIDE MENU LIST BOTTOM
 export const listBottom: List[] = [
   {
     id: 1,

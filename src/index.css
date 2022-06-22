@@ -360,7 +360,7 @@ a {
   transform: scaleX(1);
 }
 .projects__content label {
-  color: var(--white);
+  color: var(--light-grey);
 }
 
 /*------*/
@@ -463,7 +463,6 @@ a {
   height: 200px;
 }
 .post__title {
-  color: cadetblue;
   font-size: x-large;
   font-weight: bold;
 }
@@ -497,6 +496,13 @@ a {
   display: flex;
   position: relative;
   justify-content: space-between;
+}
+
+/*---------*/
+/* ARTICLE */
+/*---------*/
+.article__container {
+  padding: 1rem;
 }
 
 /*-------*/

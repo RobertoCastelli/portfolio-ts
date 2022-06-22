@@ -10,7 +10,7 @@ export interface List {
   icon: string
 }
 
-//--- LIST
+//--- NAVBAR LIST
 export const list: List[] = [
   {
     id: 1,
